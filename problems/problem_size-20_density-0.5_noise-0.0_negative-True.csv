@@ -1,0 +1,6 @@
+start,end,my_path,my_cost,nx_path,nx_cost
+1,15,[1, np.int64(15)],293.0,[np.int64(1), np.int64(15)],293.0
+13,8,[13, np.int64(8)],90.0,[np.int64(13), np.int64(8)],90.0
+8,17,[8, np.int64(17)],152.0,[np.int64(8), np.int64(17)],152.0
+1,13,[1, np.int64(13)],762.0,[np.int64(1), np.int64(13)],762.0
+4,1,[4, np.int64(1)],771.0,[np.int64(4), np.int64(1)],771.0
