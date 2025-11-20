@@ -1,0 +1,47 @@
+[
+  {
+    "source": 0,
+    "target": 1,
+    "my_cost": "-inf",
+    "nx_cost": "-inf",
+    "my_time": 224.2512969970703,
+    "nx_time": 0.002000093460083008,
+    "equal": true
+  },
+  {
+    "source": 0,
+    "target": 2,
+    "my_cost": "-inf",
+    "nx_cost": "-inf",
+    "my_time": 241.4214527606964,
+    "nx_time": 0.002004861831665039,
+    "equal": true
+  },
+  {
+    "source": 0,
+    "target": 3,
+    "my_cost": "-inf",
+    "nx_cost": "-inf",
+    "my_time": 275.7675881385803,
+    "nx_time": 0.09896731376647949,
+    "equal": true
+  },
+  {
+    "source": 0,
+    "target": 4,
+    "my_cost": "-inf",
+    "nx_cost": "-inf",
+    "my_time": 233.1012830734253,
+    "nx_time": 0.0029997825622558594,
+    "equal": true
+  },
+  {
+    "source": 0,
+    "target": 5,
+    "my_cost": "-inf",
+    "nx_cost": "-inf",
+    "my_time": 250.2469801902771,
+    "nx_time": 0.002000093460083008,
+    "equal": true
+  }
+]

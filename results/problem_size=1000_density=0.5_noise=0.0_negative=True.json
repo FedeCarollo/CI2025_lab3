@@ -1,0 +1,20 @@
+[
+  {
+    "source": 0,
+    "target": 1,
+    "my_cost": 273.0,
+    "nx_cost": 273.0,
+    "my_time": 0.0,
+    "nx_time": 3.002999782562256,
+    "equal": true
+  },
+  {
+    "source": 0,
+    "target": 2,
+    "my_cost": 865.0,
+    "nx_cost": 865.0,
+    "my_time": 0.0,
+    "nx_time": 3.9839749336242676,
+    "equal": true
+  }
+]

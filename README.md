@@ -14,6 +14,8 @@ We were required to compute optimal paths between all pairs of nodes, but it is 
 
 In particular, the Bellman Ford solution of a single instance, for all combinations, can get up to `O(n^4)` when density is high, which means it will provide results in a time proprtional to `n=1000 -> 10^(12)`, and it is required to do for many many instances of the same problem. I deemed it not useful to wait several months if not years to solve completely those instances, so I introduced some sanity check limits to ensure I got the results in time.
 
+My implementation of Bellman Ford could not yield results in less than 3 hours for a single `size=1000` problem, so I just ran it using nx. All the other instances perform correct comparison.
+
 ## Results
 I saved all solutions in `results`, each file contains the problem instance information, and json results contain
 ```
