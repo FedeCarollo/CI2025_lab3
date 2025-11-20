@@ -1,6 +1,0 @@
-start,end,my_path,my_cost,nx_path,nx_cost
-4,38,None,-inf,None,-inf
-32,21,None,-inf,None,-inf
-21,42,None,-inf,None,-inf
-4,34,None,-inf,None,-inf
-10,4,None,-inf,None,-inf

@@ -1,25 +1,32 @@
 # Shortest Path
 In this lab we were required to implement shortest path algorithms.
 
-## Dijkstra and Bellman-Ford
-In the first part I implemented Dijkstra algorithm and Bellman-Ford algorithm for shortest path
-- I used Dijkstra for positive edges problems since it is more efficient
-- For negative edges problems I used Bellman Ford
+## A* implementation
+For positive edge weights problems I used an implmentation of A* algorithm, using as heuristic the euclidean distance already used during problem generation.
 
-I then compared my results to those given by nx.
+I compared cost results with `nx`'s implementatio of Dijkstra to ensure that my algorithm found the optimal solution.
 
-My intention was to compare the problems for each pair of vertices but the time complexity makes it unfeasible, so I opted to just test for a small subset of pairs.
+## Bellman Ford implementation
+For negative edge weights, I implemented and used Bellman-Ford Algorithm and compared to `nx`'s Bellman Ford algorithm to ensure I achieved the same results.
 
-I got the same results from my algorithm and from nx's. I saved the results in `problems` folder
+## Sanity check
+We were required to compute optimal paths between all pairs of nodes, but it is clearly unfeasible when problem size grows.
 
-## A* algorithm
-I then implemented a A* variant for the problem in which I used the euclidean distance from pairs of points as the heuristic function.
+In particular, the Bellman Ford solution of a single instance, for all combinations, can get up to `O(n^4)` when density is high, which means it will provide results in a time proprtional to `n=1000 -> 10^(12)`, and it is required to do for many many instances of the same problem. I deemed it not useful to wait several months if not years to solve completely those instances, so I introduced some sanity check limits to ensure I got the results in time.
 
-As coordinates I used those provided by `map` in create_problem.
+## Results
+I saved all solutions in `results`, each file contains the problem instance information, and json results contain
+```
+example
 
-Also for the sake of time, I just tested one pair for problem instance.
-
-Since A* is a special instance of Dijkstra, it didn't make sense to test it on negative edge problems, so I just tested positive edge problems.
-
-You can find the results in `astar` folder.
+  {
+    "source": 0,    
+    "target": 1,        
+    "my_cost": 567.0,
+    "nx_cost": 567.0,
+    "my_time": 0.0,                     #In seconds
+    "nx_time": 0.002574920654296875,    #In seconds
+    "equal": true                       #If my cost vs nx cost is the same
+  },
+```
 

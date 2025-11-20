@@ -1,6 +1,0 @@
-start,end,my_path,my_cost,nx_path,nx_cost
-0,7,[0, np.int64(7)],392.0,[np.int64(0), np.int64(7)],392.0
-6,4,[6, np.int64(4)],636.0,[np.int64(6), np.int64(4)],636.0
-4,8,[4, np.int64(8)],576.0,[np.int64(4), np.int64(8)],576.0
-0,6,[0, np.int64(6)],405.0,[np.int64(0), np.int64(6)],405.0
-2,0,[2, np.int64(0)],866.0,[np.int64(2), np.int64(0)],866.0
